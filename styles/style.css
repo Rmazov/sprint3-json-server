@@ -1,0 +1,153 @@
+@import url('https://fonts.googleapis.com/css2?family=Unbounded&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    height: 100%;
+   
+    font-family: 'Unbounded', cursive;
+}
+
+.header{
+    text-align: center;
+   
+   
+}
+#coHome{
+    background-image: url("../images/home.jpg");
+    width: 100%;
+    height: 500px;
+   
+}
+#coInput{
+   margin-top: 10px;
+
+}
+title{
+    color: black;
+}
+h1{
+    color: white;
+    padding-left: 100px;
+    padding-top: 90px;
+}
+h5{
+    color: white; 
+    padding-left: 100px;  
+}
+main > h1 {
+    color: black; 
+    text-align: center;
+}
+.main{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+   
+    color: black;
+}
+
+#contenedorCards{
+    display: flex;
+    /* padding: 30px; */
+    gap: 30px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.main__card{
+    width: 398px;
+    height: 278px;
+    position: relative;
+    color: rgb(0, 0, 0);
+}
+
+.card__image{
+    width: 100%;
+    height: 100%;
+}
+
+.card__image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: top;
+}
+
+.card__name{
+    position: absolute;
+    width: 20%;
+    height: 10%;
+    top: 10px;
+    bottom: 0;
+    left: 5%;
+ 
+}
+.card__tipo{
+    position: absolute;
+    height: 10%;
+    top: 10px;
+    bottom: 0;
+    left: 50%;
+    padding: 10px 5px;
+}
+.card__valor{
+    position: absolute;
+    top: 210px;
+    bottom: 0;
+    left: 5%;
+    padding: 10px 5px;
+}
+
+.main__card:hover{
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    transform: scale(1.1);
+}
+
+
+
+
+
+
+.card__delete, .card__edit, .card__favorite{
+    font-size: 25px;
+    left: 350px;
+    position: absolute;
+    top: 0;
+    background-color: transparent;
+    border: none;
+    display: none;
+    padding: 5px;
+}
+
+.card__delete:hover, .card__edit:hover, .card__favorite:hover{
+    transform: scale(0.8);
+    cursor: pointer;
+}
+
+.main__card:hover .card__delete, .main__card:hover .card__edit, .main__card:hover .card__favorite{
+    display: block;
+}
+
+.card__edit{
+    top: 35px;
+    left: 350px;
+    transform: rotate(45deg);
+    color: yellow;
+}
+
+.card__edit:hover{
+    transform: rotate(45deg) scale(0.8);
+}
+
+.card__favorite{
+    top: 220px;
+    left: 350px;
+    color: red;
+}

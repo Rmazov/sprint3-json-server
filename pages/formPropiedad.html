@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/addNewPersonajes.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <title>Formulario Propiedades</title>
+</head>
+<header class="header">
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <div class="container-fluid">
+        <img class="navbar-brand"  src="/CRUD-Fetch/images/logo.png" alt="logo">
+        <img   src="/CRUD-Fetch/images/casaRoyal.png" alt="casaRoyal">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+          <div class="navbar-nav">
+            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+            
+           
+            <a class="nav-link" href="favoritos.html">Ir a Favoritos</a>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+<body>
+    <h1 class="title">Agregar nueva Propiedad</h1>
+ 
+    <form class="form">
+        <label for="name">Nombre</label>
+        <input id='name' type="text" placeholder="Digite aquí el nombre del personaje">
+        <label for="ubicacion">ubicacion</label>
+        <input id='ubicacion' type="text">
+        <label for="area">area</label>
+        <input id='area' type="number">
+        <label for="habitaciones">habitaciones</label>
+        <input id='habitaciones' type="number">
+        <label for="baños">baños</label>
+        <input id='baños' type="number">
+        <label for="tipoInnmueble">tipoInnmueble</label>
+        <select name="" id="tipoInnmueble">
+            <option value="">Selecione una opción</option>
+            <option value="casa">casa</option>
+            <option value="finca">finca</option>
+            <option value="localComercial">Local comercial</option>
+            <option value="apartamento">Apartamento</option>
+            <option value="otro">otro</option>
+        </select>
+        
+        
+        <label for="tipoAcuerdo">tipoAcuerdo</label>
+        <select name="" id="tipoAcuerdo">
+            <option value="">Selecione una opción</option>
+            <option value="venta">Venta</option>
+            <option value="renta">Renta</option>
+        </select>
+        <label for="Precio">Precio</label>
+        <input id='Precio' type="number">
+        <label for="nParqueaderos">Cantida Parqueaderos</label>
+        <input id='nParqueaderos' type="number">
+        <label for="propietarioNombre">Nombre propietario</label>
+        <input id='propietarioNombre' type="text">
+        <label for="propietarioCeluar">Celular propietario</label>
+        <input id='propietarioCeluar' type="text">
+        <label for="descripción">Descripción</label>
+        <input id='descripción' type="text">
+        <label for="image">Imagen</label>
+        <input id='image' type="text">
+        
+        
+        <button type="submit">Enviar</button>
+    </form>
+    <script src="../scripts/formPropiedad.js"  type="module"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+</body>
+</html>
